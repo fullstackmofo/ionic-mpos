@@ -1,5 +1,7 @@
 {
   "name": "mpos-test",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+     mpos test
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <button (click)="scan()" style="padding: 15px">scan</button>
+  <p *ngIf="device.length > 0" (click)="connect(device)" style="margin-bottom: 25px;">{{device}}</p>
+
+  <button (click)="getDeviceList()" style="padding: 15px">Get List</button>
+  <button (click)="readCard()" style="padding: 15px">Read Card</button>
 </ion-content>
